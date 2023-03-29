@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/113711991/228656394-b8d8ac9a-ffe3-4b0b-b818-f09fe4e614f8.png)
+
+
 ## Table of contents
 * [General information](#general-information)
 * [Game description](#game-description)
