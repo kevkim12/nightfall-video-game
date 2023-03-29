@@ -6,7 +6,7 @@
 * [Maps](#maps)
 
 ## General information
-The creation of Nightfall's scripts were used with the Rojo Roblox extension. While models and other important assets are not in this repository, all of the important and essentials scripts for the game are provided.
+The creation of Nightfall's scripts were used with the Rojo Roblox extension. While models and other important assets are not in this repository, all of the important and essentials scripts for the game are provided. More information about the game can be found [here](https://sites.google.com/view/kevkim/nightfall?authuser=0).
 
 ## Game description
 Nightfall is a shooter game operated on a round-based system where players must eliminate entities designated as the Infected (zombies). Players must either survive or complete objectives by killing the zombies or satisfying missions. However, there are many different zombie classes which can drastically change gameplay. Players are rewarded for their efforts and can purchase new items to enhance their chances for survival or clothing to customize their avatars. The game was inspired by the Left 4 Dead series.
