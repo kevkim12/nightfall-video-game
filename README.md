@@ -3,6 +3,7 @@
 * [Game description](#game-description)
 * [Technologies](#technologies)
 * [Infected variants](#infected-variants)
+* [Maps](#maps)
 
 ## General information
 The creation of Nightfall's scripts were used with the Rojo Roblox extension. While models and other important assets are not in this repository, all of the important and essentials scripts for the game are provided.
@@ -40,3 +41,32 @@ Wreckers are rare and dangerous zombie variants that are distinguishable with th
 Ravagers are the most dangerous zombie variant in the game that are distinguishable with their large physique. They are capable of jumping incredibly high and are able to grab and smash players to the ground. In addition, they have high health but they cannot climb ladders due to their bulky size.
 
 ![image](https://user-images.githubusercontent.com/113711991/228646706-33909d45-22c7-4474-b89a-0d745002edb4.png)
+
+## Maps
+There are currently 4 unique maps in the game.
+<div>
+  <table>
+    <tr>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228648119-fbaf8d6a-f173-40df-b2f4-e86fb825f0d9.png" alt="Title 1" />
+        <br />
+        <p>Warzone</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228648023-a95eaadd-2544-429b-8c51-9f3d34ffbf23.png" alt="Title 2" />
+        <br />
+        <p>District</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228647997-87671092-2c6e-496d-bf67-5bb57a57690a.png" alt="Title 3" />
+        <br />
+        <p>Arctic</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228648049-b0c0d9bb-f401-44a9-8ad7-38a5be8273c0.png" alt="Title 3" />
+        <br />
+        <p>Sewers</p>
+      </td>
+    </tr>
+  </table>
+</div>
