@@ -15,6 +15,9 @@ Nightfall is a shooter game operated on a round-based system where players must 
 This project is created with:
 * Lua (RBX.lua)
 * Roblox Studio
+* Blender
+* Adobe Photoshop
+* Paint.NET
 
 ## Infected variants
 ### Walker
