@@ -3,6 +3,7 @@
 * [Game description](#game-description)
 * [Technologies](#technologies)
 * [Infected variants](#infected-variants)
+* [Items](#items)
 * [Maps](#maps)
 
 ## General information
@@ -45,28 +46,98 @@ Ravagers are the most dangerous zombie variant in the game that are distinguisha
 
 ![image](https://user-images.githubusercontent.com/113711991/228646706-33909d45-22c7-4474-b89a-0d745002edb4.png)
 
+## Items
+Survivors can utilize various items to enchance their chances of survival. All firearm weapon models were made by TastyTony on Sketchfab.
+
+### Primary weapons
+<div>
+  <table>
+    <tr>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228654947-c1c7adb6-758b-424e-931a-db5dda1214fb.png" />
+        <br />
+        <p>JRC-9MM</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228655066-92f7be97-a8b0-4a6c-9464-919a3828c29d.png" />
+        <br />
+        <p>M4A1</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228655142-749c216d-3fa3-4c12-af97-2cbc4ac6d0bc.png" />
+        <br />
+        <p>SCAR-L</p>
+      </td>
+  </table>
+</div>
+
+### Secondary weapons
+<div>
+  <table>
+    <tr>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228655533-5d7fb898-3012-46a8-b312-c8ef59238973.png" />
+        <br />
+        <p>P229</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228655668-7fccdf6a-3c63-488a-b79d-62c9ce6f19f6.png" />
+        <br />
+        <p>M32A1</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228656032-ed8e6094-3754-46d6-86b0-bf350bbde38a.png" />
+        <br />
+        <p>Baseball Bat</p>
+      </td>
+  </table>
+</div>
+
+
+### Other items
+<div>
+  <table>
+    <tr>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228655963-4bd9df0b-d575-46e5-95bc-404c87ac5011.png" />
+        <br />
+        <p>Bandage</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228656074-6ba62d45-3f3e-4a08-bf0c-b14767c98e7f.png" />
+        <br />
+        <p>M67</p>
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/113711991/228656135-3e663a4b-b675-4057-ac32-c43e81e8efae.png" />
+        <br />
+        <p>Ammo Box</p>
+      </td>
+  </table>
+</div>
+
 ## Maps
 There are currently 4 unique maps in the game.
 <div>
   <table>
     <tr>
       <td>
-        <img src="https://user-images.githubusercontent.com/113711991/228648119-fbaf8d6a-f173-40df-b2f4-e86fb825f0d9.png" alt="Title 1" />
+        <img src="https://user-images.githubusercontent.com/113711991/228648119-fbaf8d6a-f173-40df-b2f4-e86fb825f0d9.png" />
         <br />
         <p>Warzone</p>
       </td>
       <td>
-        <img src="https://user-images.githubusercontent.com/113711991/228648023-a95eaadd-2544-429b-8c51-9f3d34ffbf23.png" alt="Title 2" />
+        <img src="https://user-images.githubusercontent.com/113711991/228648023-a95eaadd-2544-429b-8c51-9f3d34ffbf23.png" />
         <br />
         <p>District</p>
       </td>
       <td>
-        <img src="https://user-images.githubusercontent.com/113711991/228647997-87671092-2c6e-496d-bf67-5bb57a57690a.png" alt="Title 3" />
+        <img src="https://user-images.githubusercontent.com/113711991/228647997-87671092-2c6e-496d-bf67-5bb57a57690a.png" />
         <br />
         <p>Arctic</p>
       </td>
       <td>
-        <img src="https://user-images.githubusercontent.com/113711991/228648049-b0c0d9bb-f401-44a9-8ad7-38a5be8273c0.png" alt="Title 3" />
+        <img src="https://user-images.githubusercontent.com/113711991/228648049-b0c0d9bb-f401-44a9-8ad7-38a5be8273c0.png" />
         <br />
         <p>Sewers</p>
       </td>
