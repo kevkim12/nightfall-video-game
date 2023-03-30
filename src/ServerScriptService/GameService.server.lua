@@ -19,15 +19,23 @@ ReplicatedStorage.Events.RequestAssistance.OnServerEvent:Connect(function(player
 	ReplicatedStorage.Events.RequestResponse:FireAllClients(player.Name)
 end)
 
-local function ColorBody(character)
+local function ColorInfectedBody(character)
 	local Tones = {Color3.fromRGB(116, 134, 157), Color3.fromRGB(120, 144, 130), Color3.fromRGB(39, 70, 45), Color3.fromRGB(152, 194, 219)}
 	local SkinSelection = Tones[math.random(1,#Tones)]
-	character:WaitForChild("Body Colors").HeadColor3 = SkinSelection
-	character:WaitForChild("Body Colors").LeftArmColor3 = SkinSelection
-	character:WaitForChild("Body Colors").RightArmColor3 = SkinSelection
-	character:WaitForChild("Body Colors").LeftLegColor3 = SkinSelection
-	character:WaitForChild("Body Colors").RightLegColor3 = SkinSelection
-	character:WaitForChild("Body Colors").TorsoColor3 = SkinSelection
+	character:FindFirstChild("Body Colors").HeadColor3 = SkinSelection
+	character:FindFirstChild("Body Colors").LeftArmColor3 = SkinSelection
+	character:FindFirstChild("Body Colors").RightArmColor3 = SkinSelection
+	character:FindFirstChild("Body Colors").LeftLegColor3 = SkinSelection
+	character:FindFirstChild("Body Colors").RightLegColor3 = SkinSelection
+	character:FindFirstChild("Body Colors").TorsoColor3 = SkinSelection
+end
+
+local function ColorSurvivorBody(character, v1, v2, v3)
+	character:FindFirstChild("Body Colors").HeadColor3 = Color3.fromRGB(v1, v2, v3)
+	character:FindFirstChild("Body Colors").LeftArmColor3 = Color3.new(v1, v2, v3)
+	character:FindFirstChild("Body Colors").RightArmColor3 = Color3.new(v1, v2, v3)
+	character:FindFirstChild("Body Colors").RightLegColor3 = Color3.new(v1, v2, v3)
+	character:FindFirstChild("Body Colors").TorsoColor3 = Color3.new(v1, v2, v3)
 end
 
 local function DesertOutfit(character)
@@ -152,77 +160,29 @@ game.Players.PlayerAdded:connect(function(Player)
 			Character.Head:WaitForChild("face").Texture = ReplicatedStorage.CharacterData.Face[ReplicatedStorage.GameData.PlayerData[Player.Name].Character.Face.Value].Icon.Value
 			local Tone = ReplicatedStorage.GameData.PlayerData[Player.Name].Character["Skin Tone"].Value
 			if Tone == "Option1" then
-				Character["Body Colors"].HeadColor3 = Color3.new(255/255, 216/255, 185/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(255/255, 216/255, 185/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(255/255, 216/255, 185/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(255/255, 216/255, 185/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(255/255, 216/255, 185/255)
+				ColorSurvivorBody(Character, 255, 216, 185)
 			elseif Tone == "Option2" then
-				Character["Body Colors"].HeadColor3 = Color3.new(255/255, 207/255, 169/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(255/255, 207/255, 169/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(255/255, 207/255, 169/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(255/255, 207/255, 169/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(255/255, 207/255, 169/255)
+				ColorSurvivorBody(Character, 255, 207, 169)
 			elseif Tone == "Option3" then
-				Character["Body Colors"].HeadColor3 = Color3.new(255/255, 208/255, 164/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(255/255, 208/255, 164/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(255/255, 208/255, 164/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(255/255, 208/255, 164/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(255/255, 208/255, 164/255)
+				ColorSurvivorBody(Character, 255, 208, 164)
 			elseif Tone == "Option4" then
-				Character["Body Colors"].HeadColor3 = Color3.new(245/255, 197/255, 148/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(245/255, 197/255, 148/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(245/255, 197/255, 148/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(245/255, 197/255, 148/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(245/255, 197/255, 148/255)
+				ColorSurvivorBody(Character, 245, 197, 148)
 			elseif Tone == "Option5" then
-				Character["Body Colors"].HeadColor3 = Color3.new(245/255, 187/255, 136/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(245/255, 187/255, 136/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(245/255, 187/255, 136/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(245/255, 187/255, 136/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(245/255, 187/255, 136/255)
+				ColorSurvivorBody(Character, 245, 187, 136)
 			elseif Tone == "Option6" then
-				Character["Body Colors"].HeadColor3 = Color3.new(245/255, 182/255, 130/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(245/255, 182/255, 130/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(245/255, 182/255, 130/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(245/255, 182/255, 130/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(245/255, 182/255, 130/255)
+				ColorSurvivorBody(Character, 245, 182, 130)
 			elseif Tone == "Option7" then
-				Character["Body Colors"].HeadColor3 = Color3.new(201/255, 156/255, 125/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(201/255, 156/255, 125/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(201/255, 156/255, 125/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(201/255, 156/255, 125/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(201/255, 156/255, 125/255)
+				ColorSurvivorBody(Character, 201, 156, 125)
 			elseif Tone == "Option8" then
-				Character["Body Colors"].HeadColor3 = Color3.new(178/255, 126/255, 89/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(178/255, 126/255, 89/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(178/255, 126/255, 89/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(178/255, 126/255, 89/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(178/255, 126/255, 89/255)
+				ColorSurvivorBody(Character, 178, 126, 89)
 			elseif Tone == "Option9" then
-				Character["Body Colors"].HeadColor3 = Color3.new(150/255, 104/255, 70/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(150/255, 104/255, 70/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(150/255, 104/255, 70/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(150/255, 104/255, 70/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(150/255, 104/255, 70/255)
+				ColorSurvivorBody(Character, 150, 104, 70)
 			elseif Tone == "Option10" then
-				Character["Body Colors"].HeadColor3 = Color3.new(100/255, 68/255, 47/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(100/255, 68/255, 47/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(100/255, 68/255, 47/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(100/255, 68/255, 47/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(100/255, 68/255, 47/255)
+				ColorSurvivorBody(Character, 100, 68, 47)
 			elseif Tone == "Option11" then
-				Character["Body Colors"].HeadColor3 = Color3.new(76/255, 50/255, 35/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(76/255, 50/255, 35/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(76/255, 50/255, 35/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(76/255, 50/255, 35/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(76/255, 50/255, 35/255)
+				ColorSurvivorBody(Character, 76, 50, 35)
 			elseif Tone == "Option12" then
-				Character["Body Colors"].HeadColor3 = Color3.new(57/255, 35/255, 21/255)
-				Character["Body Colors"].LeftArmColor3 = Color3.new(57/255, 35/255, 21/255)
-				Character["Body Colors"].RightArmColor3 = Color3.new(57/255, 35/255, 21/255)
-				Character["Body Colors"].RightLegColor3 = Color3.new(57/255, 35/255, 21/255)
-				Character["Body Colors"].TorsoColor3 = Color3.new(57/255, 35/255, 21/255)
+				ColorSurvivorBody(Character, 57, 35, 21)
 			end
 			local ID = MaleScreams[math.random(1,#MaleScreams)]
 			Character.Head:WaitForChild("Death").SoundId = "rbxassetid://" .. ID
@@ -255,7 +215,7 @@ game.Players.PlayerAdded:connect(function(Player)
 						if Character:FindFirstChild("Pants") ~= nil then
 							Character:WaitForChild("Pants"):Destroy()
 						end
-						ColorBody(Character)
+						ColorInfectedBody(Character)
 						Character:WaitForChild("Humanoid").WalkSpeed = 22
 						wait()
 						DesertOutfit(Character)
@@ -272,7 +232,7 @@ game.Players.PlayerAdded:connect(function(Player)
 						if Character:FindFirstChild("Pants") ~= nil then
 							Character:WaitForChild("Pants"):Destroy()
 						end
-						ColorBody(Character)
+						ColorInfectedBody(Character)
 						Character:WaitForChild("Humanoid").WalkSpeed = 17
 						wait()
 						DesertOutfit(Character)
